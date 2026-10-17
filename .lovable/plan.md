@@ -1,4 +1,4 @@
-# Personal Portfolio — Ambitious High School AI Founder
+# Isabel Chang — Personal Portfolio (IsabelChang.com)
 
 ## Goal
 A personal brand site to use in applications (jobs, programs, investors) that presents you as a high school student building an AI startup, with links to your sites and your research project.
@@ -14,6 +14,9 @@ A personal brand site to use in applications (jobs, programs, investors) that pr
 - **Research (/research)** — title, question, method, findings, links to paper/code/slides.
 - **Resume & Contact (/resume)** — timeline of education, experience and awards, resume PDF download, email and social links (GitHub, LinkedIn, X).
 - Shared header nav and footer on every page; each page gets its own title/description for link previews.
+
+## Domain
+- The site will live at IsabelChang.com. After publishing, connect it in Project settings, Domains (or buy it there if you don't own it yet). Page titles and links will use "Isabel Chang".
 
 ## Content
 You haven't shared your details yet, so I'll use clearly marked placeholder text and links. All content lives in one easy-to-edit file so you (or any AI tool) can swap in your real name, bio, projects and research.
