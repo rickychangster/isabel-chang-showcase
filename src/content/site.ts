@@ -6,7 +6,7 @@ const photo = (caption: string, detail: string): Photo => ({ caption, detail, al
 export const site = {
  name: 'Isabel Chang', domain: 'https://isabelchang.com',
  title: 'Isabel Chang — Built with Curiosity', description: 'Debater, founder, researcher, artist and builder. Explore the questions Isabel Chang follows into action.',
- nav: [{id:'introduction',label:'Introduction'},{id:'built',label:"What I’ve Built"},{id:'next',label:"What’s Next"},{id:'honors',label:'Honors'},{id:'connect',label:'Connect'},{id:'about',label:'About Me'}],
+ nav: [{id:'introduction',label:'Introduction'},{id:'built',label:"What I’ve Built"},{id:'next',label:"What’s Next"},{id:'honors',label:'Honors'},{id:'about',label:'About Me'},{id:'connect',label:'Connect'}],
  hero: {label:'Curiosity, put into motion.', greeting:"Hi, I’m Isabel.", title:'I build things that', emphasis:'matter to me.', roles:['Debater','Founder','Researcher','Artist','Builder'], cta:"See what I’ve been up to", photos:[photo('A little glimpse of my world','A portrait of Isabel'),photo('Questions. People. Possibilities.','Debate, museum & everyday moments')]},
  glance: {label:'At a glance', title:'A few numbers. A lot of heart.', stats:[{number:'#1',unit:'Nationally',detail:'NDCA National Championship · Public Forum Debate'},{number:'150+',unit:'Students',detail:'Reached through Wise Online, the media literacy nonprofit I founded'},{number:'300+',unit:'Visitors',detail:'Educated as a Junior Ambassador at the Bowers Museum'},{number:'60k+',unit:'Monthly',detail:'Impressions on my henna art Pinterest'},{number:'$14,300',unit:'raised',detail:'supporting nonprofits'}]},
  thread: {label:'My thread', title:'I follow what grabs me.', subtitle:'Here’s where it’s led.'},
