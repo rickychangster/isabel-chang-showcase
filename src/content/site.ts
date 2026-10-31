@@ -1,50 +1,60 @@
-// Single source of truth for all site content. Replace placeholders marked [TODO].
+// All public portfolio text, links and replaceable photograph slots live here.
+export type Photo = { caption: string; detail: string; src?: string; alt: string };
+export type Project = { name: string; role?: string; body?: string; points?: string[]; quote?: string; notes?: string[]; link?: { label: string; href?: string } };
+export type Thread = { id: string; title: string; tone: string; intro: string; projects: Project[]; photos: Photo[] };
+const photo = (caption: string, detail: string): Photo => ({ caption, detail, alt: caption });
 export const site = {
-  name: "Isabel Chang",
-  domain: "https://isabelchang.com",
-  tagline: "High school student. AI founder. Researcher.",
-  mission:
-    "I build AI tools that make hard problems feel approachable — and I study why they work. [TODO: your one-line mission]",
-  email: "hello@isabelchang.com",
-  socials: [
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "X", href: "https://x.com/" },
-  ],
-  resumeUrl: "/resume.pdf",
+ name: 'Isabel Chang', domain: 'https://isabelchang.com',
+ title: 'Isabel Chang — Built with Curiosity', description: 'Debater, founder, researcher, artist and builder. Explore the questions Isabel Chang follows into action.',
+ nav: [{id:'introduction',label:'Introduction'},{id:'built',label:"What I’ve Built"},{id:'honors',label:'Honors'},{id:'connect',label:'Connect'},{id:'about',label:'About Me'}],
+ hero: {label:'Curiosity, put into motion.', greeting:"Hi, I’m Isabel.", title:'I build things that', emphasis:'matter to me.', roles:['Debater','Founder','Researcher','Artist','Builder'], cta:"See what I’ve been up to", photos:[photo('A little glimpse of my world','A portrait of Isabel'),photo('Questions. People. Possibilities.','Debate, museum & everyday moments')]},
+ glance: {label:'At a glance', title:'A few numbers. A lot of heart.', stats:[{number:'#1',unit:'Nationally',detail:'NDCA National Championship · Public Forum Debate'},{number:'150+',unit:'Students',detail:'Reached through Wise Online, the media literacy nonprofit I founded'},{number:'300+',unit:'Visitors',detail:'Educated as a Junior Ambassador at the Bowers Museum'},{number:'60k+',unit:'Monthly',detail:'Impressions on my henna art Pinterest'},{number:'$14,300',unit:'raised',detail:'supporting nonprofits'}]},
+ thread: {label:'My thread', title:'I follow what grabs me.', subtitle:'Here’s where it’s led.'},
+ built: {label:'Curiosity → action', title:"What I’ve Built"},
+ honors: {label:'Along the way',title:'Honors & Awards',subtitle:'Recognition from people who watched me work.'},
+ connect: {label:'Keep the conversation going',title:'Let’s Talk',body:"Whether it’s about debate, philosophy, a collaboration, or just something interesting, I’d love to hear from you.",reading:'Currently reading',obsessed:'Currently obsessed with',placeholder:'To be continued…',fields:{name:'Name',email:'Email',message:'Message'},submit:'Send it',sending:'Sending…',success:'Got it! I’ll get back to you soon.',error:'Your message didn’t send. Please try again.',validation:'Please enter your name, a valid email, and a message.',again:'Send another message'},
+ about: {label:'Beyond the bullet points',title:'A Little More About Me',paragraphs:["I’m Isabel Chang — a senior at Fairmont Preparatory Academy in Anaheim, CA, and a person who can’t leave an interesting question alone.","When I discovered debate in 9th grade, I didn’t just join the team — I became Head Captain, qualified for the Tournament of Champions three times, and helped my team win a national championship. When I noticed middle schoolers had no tools to spot misinformation, I didn’t write an essay about it — I co-founded Wise Online, a nonprofit that’s now partnered with the City of Irvine and taught 150+ students how to think critically about what they read.","When the Bowers Museum opened an exhibit on China’s Terracotta Warriors, I didn’t just visit — I trained as a Junior Ambassador and educated hundreds of visitors on artifacts I’d researched firsthand.","That’s the pattern. Something grabs me, and I grab back.","Outside of all that, I’m a 14-year dancer (jazz, lyrical, K-pop, ballet), a henna artist whose Pinterest pulls 60k impressions a month, a Varsity badminton captain who curates the team hype playlist, and someone who genuinely believes philosophy should be taught in middle school."],
+ educationTitle:'Education',school:'Fairmont Preparatory Academy',location:'Anaheim, CA',diploma:'Expected Diploma: 2027',gpa:'4.89 GPA · Weighted',courseworkTitle:'Selected coursework',coursework:['Differential Equations','Linear Algebra','AP Computer Science A','AP Art History','AP Chinese','AP Chemistry','AP Calculus BC','IB Philosophy'],skillsTitle:'Skills & tools',skills:[{label:'Languages',text:'Mandarin Chinese (fluent), Java, C++, x86 Assembly'},{label:'Software',text:'Adobe Premiere, Photoshop, 3D Modeling, Canva, Google Workspace'},{label:'Other',text:'CPR & First Aid Certified, 14 years of dance, Henna Artist'}], interestsTitle:'The things I come back to',interests:[{title:'Movement',text:'14 years of jazz, lyrical, K-pop, and ballet.',photo:photo('In my element','Dance & everyday moments')},{title:'A little friendly competition',text:'Varsity badminton captain. Team hype playlist curator.',photo:photo('On the court','Badminton & team moments')},{title:'Art, made personal',text:'Phoenixes and turtles — my mom’s lucky charms — find their way into my henna.',photo:photo('The details matter','Henna & creative moments')}]},
+ footer:'© 2026 Isabel Chang · Built with curiosity', footerNote:'Always asking. Always making.', email: undefined as string | undefined, pinterest: undefined as string | undefined,
+ photoLabel:'Photo to come', paperPending:'Paper link coming soon', emailLabel:'Email Isabel', pinterestLabel:'Henna on Pinterest',menuOpen:'Open navigation',menuClose:'Close navigation', backToTop:'Back to top',
 };
-
-export const highlights = [
-  { kicker: "Startup", title: "[TODO] Startup name", body: "Founder building an AI product for [audience].", to: "/projects" as const },
-  { kicker: "Research", title: "[TODO] Research title", body: "Independent study on [topic] with [mentor/lab].", to: "/research" as const },
-  { kicker: "Recognition", title: "Awards & programs", body: "[TODO] Competitions, fellowships and press.", to: "/resume" as const },
+export const threads: Thread[] = [
+ {id:'argument',title:'Argument & Persuasion',tone:'coral',intro:'I fell in love with debate because it taught me that the best ideas have to survive the hardest questions.',projects:[
+ {name:'Competitive Debate',role:'Head Captain & Varsity Debater · Fairmont Prep Debate Team',body:'Public Forum (2v2 policy) & Lincoln-Douglas (1v1 values)',points:['#10 nationally out of 4,600 teams (NDCA)','#1 sophomore team in the nation','3× Tournament of Champions qualifier','39+ national and international tournaments'],quote:'I didn’t just compete. I ran practices twice a week and mentored 14 novices on case-building and rebuttals.'},
+ {name:'Orange County Debate League',role:'Board Director & Head Tabulation Administrator',body:'A nonprofit providing affordable tournaments to 96 schools since 2009.',points:['Administered 12 state and 4 national championships','450+ debaters served','Trained 7 tabulation staff'],quote:'I strengthened the league’s communication, liability, and equity policies.'},
+ {name:'Taiwan International Debate',body:'Quarterfinalist, Top 8 team and #5 speaker out of 72 teams. Earned a Tournament of Champions bid.'}],photos:[photo('Ideas worth standing up for','Debate tournaments & team events'),photo('Across the world, across the table','Taiwan International Debate')]},
+ {id:'philosophy',title:'Philosophy & Ethics',tone:'indigo',intro:'If debate taught me how to argue, philosophy taught me what’s worth arguing about.',projects:[
+ {name:'Wise Online',role:'Co-founder · Curriculum Author · Instructor · Social Media Manager',body:'A nonprofit teaching philosophy, ethics, and media literacy to middle schoolers.',points:['150+ students reached','9 lessons written: bias, rhetoric, clickbait','94% student approval rate','Partnered with City of Irvine, 6 schools, and 5 organizations'],quote:'I didn’t find a program that taught kids to spot misinformation, so I built one.',notes:['Rotary Service Above Self Scholarship: $1,000, #1 regionally, top 150 internationally; donated back to Wise Online.','Dragon Kim Foundation Finalist.']},
+ {name:'Stanford Reischauer Scholars Program',role:'Selected Scholar (1 of 30) & Researcher',body:'Stanford Program on International & Cross-Cultural Education. Authored and presented research on the epistemology and politics of Japan’s Mingei Folk Arts.',quote:'Weekly discussions with experts. Advised by Naomi Funahashi.',link:{label:'Published research paper'}},
+ {name:'UCI Ethics & Morality Research',role:'Selected Research Intern & Mentee',body:'Assisted a documentary on NYC Asian American activism with filmmaker Christina Ong. Researched art activism and pan-Asian coalitions through interviews, archives, and books.'},
+ {name:'Philosophy Club',role:'President',body:'Founded and leads biweekly ethics discussion groups at school.'}],photos:[photo('Big questions, young thinkers','Wise Online workshops & student activities'),photo('Learning to look a little closer','Research & educational materials')]},
+ {id:'culture',title:'Culture & Heritage',tone:'amber',intro:'My culture isn’t something I inherited passively. It’s something I actively share, study, and celebrate.',projects:[
+ {name:'Bowers Museum',role:'Junior Ambassador, Docent & Mentor · 1 of 14 selected students',body:'Researched and presented to 300+ visitors on 4 exhibits, including the Terracotta Warriors and Chinese national relics (Grade 1 Cultural Relics, 110 new discoveries).',notes:['Interviewed and featured in the Chinese Daily News.','30+ volunteer hours of museum tours.']},
+ {name:'Asian American Club',role:'President',body:'Plans biweekly cultural immersion events built around food and discussion.'},
+ {name:'Henna Art',body:'An independent creative practice featuring 100+ original designs for friends, family, and school events.',points:['60k+ Pinterest impressions/month','1.6k+ engagements/month','Featured artist at Culture Week and Diwali Festival (2×, 600+ attendees)'],quote:'My mom’s lucky charms are phoenixes and turtles. They show up in a lot of my work.'}],photos:[photo('Stories held in objects','Bowers Museum exhibits & presentations'),photo('A practice of my own','Henna designs & artwork'),photo('Culture, brought together','Culture Week & Diwali Festival'),photo('Every line has a story','Original henna details')]},
+ {id:'technology',title:'Tech & Research',tone:'teal',intro:'I treat tech the way I treat debate: as a tool for testing ideas against reality.',projects:[
+ {name:'Yale Young Global Scholars',role:'CS Capstone · Innovations in Science and Technology, Session II',body:'Researched and presented on optimizing chess bot algorithms. Programmed and engineered a cube satellite, statistically concluding Ashley’s > Arethusa.'},
+ {name:'Quantum Computing',role:'Featured Speaker · OC Tech Week',body:'Presented on quantum computing alongside Peter Shor to an audience of 50+.',notes:['Partner: Quantum Tesseract.']},
+ {name:'Technical Skills',body:'Java · C++ · x86 Assembly',notes:['Coursework: AP Computer Science A, Advanced Coding Languages, Differential Equations & Linear Algebra.']}],photos:[photo('Ideas, tested against reality','Presentations, coding & technical projects'),photo('Making the abstract tangible','Cube satellite & research work')]},
+ {id:'community',title:'Community & Service',tone:'purple',intro:'Service isn’t a line on a resume. It’s what you do when you see a gap and decide to fill it.',projects:[
+ {name:'ASB',role:'Community Service & Cultural Awareness Commissioner',points:['$2,000+ raised for Thanksgiving meals','$1,900+ raised for homeless services','300+ toys donated','$2,300+ raised for Street Child United','430 lbs of candy donated to Boys & Girls Club'],body:'Managed Cultural Fair twice: 20+ booths, 600+ participants, $3k budget, and a team of 40.',notes:['Named 3× MVP.']},
+ {name:'Congressional Campaign Internship',role:'Intern Canvasser & Journalist · California’s 47th Congressional District',points:['Contacted 1,200+ voters through door-to-door outreach and calls.','Researched and authored an 800-word journalism piece on state regulation, interviewing 2 local businesses.'],notes:['100+ volunteer hours.']},
+ {name:'ISP Changemakers Docathon',role:'Documentary Team Lead',body:'Scholarship recipient from International Schools Partnership.'}],photos:[photo('Showing up for each other','Cultural fairs, charity events & community projects'),photo('A team effort','Service & documentary team moments')]}
 ];
-
-export const projects = [
-  { name: "[TODO] Startup", oneLiner: "AI assistant that helps [who] do [what].", role: "Founder & CEO", stack: ["Next-gen LLMs", "TypeScript", "Python"], href: "https://example.com", year: "2026" },
-  { name: "[TODO] Side project", oneLiner: "A tool or site you built and shipped.", role: "Builder", stack: ["React", "Design"], href: "https://example.com", year: "2025" },
-  { name: "[TODO] Community", oneLiner: "Club, hackathon or initiative you lead.", role: "Organizer", stack: ["Leadership"], href: "https://example.com", year: "2025" },
-];
-
-export const research = {
-  title: "[TODO] Research project title",
-  question: "What question are you trying to answer, and why does it matter?",
-  method: "How you approached it: data, models, experiments, mentors.",
-  findings: [
-    "Key finding one, stated plainly.",
-    "Key finding two, with a number if you have one.",
-    "What it means and what comes next.",
-  ],
-  links: [
-    { label: "Read the paper", href: "https://example.com" },
-    { label: "View the code", href: "https://github.com/" },
-    { label: "See the slides", href: "https://example.com" },
-  ],
-};
-
-export const timeline = [
-  { when: "2026 — now", what: "Founder, [TODO] Startup", where: "Building with early users" },
-  { when: "2025 — now", what: "Independent researcher", where: "[TODO] Lab / mentor" },
-  { when: "2023 — 2027", what: "Student", where: "[TODO] High School" },
-  { when: "2025", what: "[TODO] Award or competition", where: "Placement / recognition" },
+export const awards = [
+ {year:'2026',items:[
+ {title:'#1 Team · NDCA National Championship',detail:'Public Forum · Only the top 5% nationally qualify.',scope:'National'},
+ {title:'Semifinalist · UNLV Debate Tournament',detail:'Top 4 of 140 teams.',scope:'National'},
+ {title:'Quarterfinalist · Arizona State University Debate Tournament',detail:'Top 16 of 288 teams.',scope:'National'},
+ {title:'#6 Speaker · UC Berkeley TOC Invitational',detail:'Out of 342 speakers.',scope:'National'},
+ {title:'Rotary Service Above Self Scholarship',detail:'1 of 150 internationally, #1 regionally. $1,000 donated to Wise Online.',scope:'International'},
+ {title:'Dragon Kim Foundation Finalist',detail:'Approximately top 50 across 3 states.',scope:'Regional'},
+ {title:'Changemakers Docathon Scholarship',detail:'International Schools Partnership.',scope:'International'},
+ {title:'Philosophy Student of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'},
+ {title:'AP Chinese Student of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'}]},
+ {year:'2024',items:[
+ {title:'Quarterfinalist & #5 Speaker · Taiwan Speech & Debate Invitational',detail:'Out of 72 teams. Tournament of Champions bid earned.',scope:'International'},
+ {title:'Octofinalist · Yale Invitational Debate Tournament',detail:'Top 32 of 320 teams.',scope:'National'},
+ {title:'Badminton Doubles Player of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'}]},
+ {year:'2023',items:[{title:'Valedictorian Scholarship',detail:'Approximately $90,000+.',scope:'School'}]}
 ];

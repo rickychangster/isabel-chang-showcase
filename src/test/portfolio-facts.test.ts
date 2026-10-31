@@ -1,0 +1,10 @@
+import { expect, it } from 'vitest';
+import { site, threads, awards } from '@/content/site';
+it('preserves the supplied nonprofit fundraising total',()=>expect(site.glance.stats.at(-1)?.number).toBe('$14,300'));
+it('preserves the supplied student reach',()=>expect(site.glance.stats[1]?.number).toBe('150+'));
+it('preserves the supplied museum audience',()=>expect(site.glance.stats[2]?.number).toBe('300+'));
+it('preserves the supplied monthly art impressions',()=>expect(site.glance.stats[3]?.number).toBe('60k+'));
+it('preserves the expected diploma year',()=>expect(site.about.diploma).toBe('Expected Diploma: 2027'));
+it('preserves all five curiosity threads',()=>expect(threads.map(t=>t.id)).toEqual(['argument','philosophy','culture','technology','community']));
+it('preserves the supplied recognition years',()=>expect(awards.map(a=>a.year)).toEqual(['2026','2024','2023']));
+it('does not expose an invented email address',()=>expect(site.email).toBeUndefined());
