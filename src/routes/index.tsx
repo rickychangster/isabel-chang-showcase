@@ -11,7 +11,7 @@ function CategoryColumn({category,index}:{category:Category;index:number}){
  return <article className={`category-column tone-${category.tone}`}>
   <div className="category-heading"><span className="thread-number">0{index+1}</span><h3>{category.title}</h3><Asterisk className="thread-asterisk" size={30} strokeWidth={1.5}/></div>
   <p className="category-intro">“{category.intro}”</p>
-  {category.projects.map(p=><ProjectDetail key={p.name} project={p}/>)}
+  <div className="category-projects">{category.projects.map(p=><ProjectDetail key={p.name} project={p}/>)}</div>
   <div className="category-photos">{category.photos.map(photo=><PhotoSpace key={photo.caption} photo={photo}/>)}</div>
  </article>;
 }
