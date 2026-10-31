@@ -23,18 +23,18 @@ function Research() {
       <section className="mx-auto grid max-w-6xl gap-10 px-6 md:grid-cols-2">
         <div>
           <p className="kicker">The question</p>
-          <p className="mt-3 font-display text-2xl leading-snug">{research.question}</p>
+          <p className="heading-4 mt-3">{research.question}</p>
         </div>
         <div>
           <p className="kicker">The method</p>
-          <p className="mt-3 font-display text-2xl leading-snug">{research.method}</p>
+          <p className="heading-4 mt-3">{research.method}</p>
         </div>
       </section>
       <section className="mx-auto mt-16 max-w-6xl px-6">
         <p className="kicker">Findings</p>
         <ol className="mt-4 divide-y divide-border border-y border-border">
           {research.findings.map((f, i) => (
-            <li key={f} className="flex gap-6 py-6 text-xl">
+            <li key={f} className="flex gap-6 lead py-6">
               <span className="font-display text-primary">{String(i + 1).padStart(2, "0")}</span>{f}
             </li>
           ))}

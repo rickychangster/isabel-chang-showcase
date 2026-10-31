@@ -27,8 +27,8 @@ function Projects() {
           <article key={p.name} className="card-warm grid gap-6 md:grid-cols-[1fr_auto] md:items-end">
             <div>
               <p className="kicker">{p.year} · {p.role}</p>
-              <h2 className="mt-3 font-display text-4xl font-semibold">{p.name}</h2>
-              <p className="mt-2 max-w-xl text-lg text-muted-foreground">{p.oneLiner}</p>
+              <h2 className="heading-3 mt-3">{p.name}</h2>
+              <p className="lead mt-2 max-w-xl text-muted-foreground">{p.oneLiner}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.stack.map((s) => <span key={s} className="tag">{s}</span>)}
               </div>

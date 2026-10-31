@@ -32,8 +32,8 @@ function Resume() {
           {timeline.map((t) => (
             <li key={t.what} className="grid gap-2 py-6 md:grid-cols-[200px_1fr_auto] md:items-baseline">
               <span className="kicker">{t.when}</span>
-              <span className="font-display text-2xl font-semibold">{t.what}</span>
-              <span className="text-muted-foreground">{t.where}</span>
+              <span className="heading-4">{t.what}</span>
+              <span className="body text-muted-foreground">{t.where}</span>
             </li>
           ))}
         </ol>

@@ -11,10 +11,10 @@ const nav = [
 export function Header() {
   return (
     <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-      <Link to="/" className="font-display text-2xl font-semibold tracking-tight">
+      <Link to="/" className="heading-4 tracking-tight">
         Isabel<span className="text-primary">.</span>
       </Link>
-      <nav className="flex gap-5 text-sm md:gap-8">
+      <nav className="flex gap-5 text-base md:gap-8">
         {nav.map((n) => (
           <Link key={n.to} to={n.to} className="link-underline" activeProps={{ className: "text-primary" }}>
             {n.label}
@@ -28,7 +28,7 @@ export function Header() {
 export function Footer() {
   return (
     <footer className="mt-24 border-t border-border">
-      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-sm text-muted-foreground md:flex-row md:justify-between">
+      <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-base text-muted-foreground md:flex-row md:justify-between">
         <p>© {new Date().getFullYear()} {site.name}</p>
         <div className="flex gap-6">
           <a href={`mailto:${site.email}`} className="link-underline">Email</a>
@@ -45,8 +45,8 @@ export function PageIntro({ kicker, title, children }: { kicker: string; title: 
   return (
     <section className="mx-auto max-w-6xl px-6 pt-12 pb-10 md:pt-20">
       <p className="kicker">{kicker}</p>
-      <h1 className="mt-4 max-w-4xl font-display text-5xl leading-[1.02] font-semibold tracking-tight md:text-7xl">{title}</h1>
-      {children && <div className="mt-6 max-w-2xl text-lg text-muted-foreground">{children}</div>}
+      <h1 className="heading-2 mt-4 max-w-4xl">{title}</h1>
+      {children && <div className="lead mt-6 max-w-2xl text-muted-foreground">{children}</div>}
     </section>
   );
 }

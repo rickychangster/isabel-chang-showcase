@@ -20,10 +20,10 @@ function Index() {
     <>
       <section className="mx-auto max-w-6xl px-6 pt-12 pb-20 md:pt-24">
         <p className="kicker">{site.tagline}</p>
-        <h1 className="mt-6 font-display text-6xl leading-[0.95] font-semibold tracking-tight md:text-[8.5rem]">
+        <h1 className="heading-1 mt-6">
           Isabel Chang<span className="text-primary">.</span>
         </h1>
-        <p className="mt-8 max-w-2xl font-display text-2xl leading-snug italic text-muted-foreground md:text-3xl">
+        <p className="heading-4 mt-8 max-w-2xl font-normal italic text-muted-foreground md:text-3xl">
           {site.mission}
         </p>
         <div className="mt-10 flex flex-wrap gap-3">
@@ -36,8 +36,8 @@ function Index() {
         {highlights.map((h, i) => (
           <Link key={h.kicker} to={h.to} className="card-warm group">
             <p className="kicker">0{i + 1} — {h.kicker}</p>
-            <h2 className="mt-6 font-display text-3xl font-semibold leading-tight group-hover:text-primary">{h.title}</h2>
-            <p className="mt-3 text-muted-foreground">{h.body}</p>
+            <h2 className="heading-3 mt-6 group-hover:text-primary">{h.title}</h2>
+            <p className="body mt-3 text-muted-foreground">{h.body}</p>
           </Link>
         ))}
       </section>
