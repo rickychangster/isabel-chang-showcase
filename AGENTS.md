@@ -21,3 +21,4 @@
 
 - Reusable portfolio sections, photograph slots and the contact form live in `src/components/`; photo URLs and captions remain in the content module — separates presentation from personal content.
 - Contact submissions are validated through `src/lib/contact.functions.ts` and stored insert-only in Cloud; anonymous visitors cannot read, update or delete messages — protects visitor privacy.
+- Whole-site palette comparisons use a temporary root data attribute controlled by PalettePreview, with CSS-only token overrides and no saved default — visitors can compare without committing a design choice.
