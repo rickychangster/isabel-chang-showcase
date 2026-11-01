@@ -21,16 +21,18 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.portfolio-button:hover{transform:none}}
 
 /* Typography scale: one set of sizes for headings and text. Keep this block last so it wins over the component rules above. */
-:root{--fs-h2:56px;--fs-h3:34px;--fs-h4:24px;--fs-lead:20px;--fs-body:18px;--fs-secondary:16px;--fs-ui:15px;--fs-small:13px}
-@media(max-width:700px){:root{--fs-h2:37px;--fs-h3:26px;--fs-h4:20px;--fs-lead:19px}}
+:root{--fs-h2:56px;--fs-h3:28px;--fs-h4:28px;--fs-lead:18px;--fs-body:18px;--fs-secondary:18px;--fs-ui:16px;--fs-small:13px}
+@media(max-width:700px){:root{--fs-h2:37px;--fs-h3:22px;--fs-h4:22px}}
 body{font-size:var(--fs-body)}
 h2,.my-thread h2,.built-heading h2{font-size:var(--fs-h2)}
 .category-heading h3,.awards-year h3,.interests-heading,.contact-success h3{font-size:var(--fs-h3)}
 .category-column .project-detail h4,.project-detail h4,.featured-project h4,.interests-grid h4,.education-grid h3,.next-name,.about-story .about-manifesto{font-size:var(--fs-h4)}
 .award h4,.project-detail>p,.project-detail li,.project-detail blockquote,.about-story p,.next-body,.current-interests p:last-child,.category-intro{font-size:var(--fs-body)}
 .about-story p:first-child{font-size:var(--fs-lead)}
-.hero-roles,.stat-unit,.section-subtitle,.section-topline>p:last-child,.project-detail .project-note,.award p,.education-grid p:not(.eyebrow),.interests-grid article>p,.footer-inner,.contact-form label,.contact-form input,.contact-form textarea,.photo-space figcaption,.photo-empty-title,.stat-fundraising .stat-detail{font-size:var(--fs-secondary)}
+.hero-roles,.stat-unit,.section-subtitle,.section-topline>p:last-child,.project-detail .project-note,.award p,.education-grid p:not(.eyebrow),.interests-grid article>p,.footer-inner,.contact-form label,.contact-form input,.contact-form textarea,.photo-space figcaption,.photo-empty-title,.stat-fundraising .stat-detail,.stat-detail,.footer-note{font-size:var(--fs-secondary)}
 .project-role,.pending-link{font-size:var(--fs-secondary)!important}
 .desktop-nav{font-size:var(--fs-ui)}
 .portfolio-button,.thread-link{font-size:var(--fs-ui)!important}
-.eyebrow,.current-interests .eyebrow,.stat-detail,.award-scope,.photo-pending,.footer-note{font-size:var(--fs-small)}
+.eyebrow,.current-interests .eyebrow,.award-scope,.photo-pending{font-size:var(--fs-small)}
+.project-detail blockquote{font-family:var(--font-sans);font-weight:400}
+.education-gpa{font-size:var(--fs-h4)!important}
