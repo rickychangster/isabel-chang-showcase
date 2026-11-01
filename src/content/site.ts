@@ -253,7 +253,7 @@ export const categories: Category[] = [
   },
   {
     id: "service",
-    title: "Communities I Served",
+    title: "Serving",
     tone: "teal",
     projects: [
       {
