@@ -6,5 +6,5 @@
 - [x] Add "What's Next" (Teleios) section between Built and Honors.
 - [x] Remove Badminton Captain placeholder (removed at user request).
 - [x] Crop badminton photo to 2:3 aspect ratio (crop from bottom).
-- [ ] Add temporary whole-site previews for Midnight Indigo, Neon Mint, Vapor Chrome, and Sky & Peach.
-- [ ] Verify palette switching, original-color restore, and layout.
+- [x] Add temporary whole-site previews for Midnight Indigo, Neon Mint, Vapor Chrome, and Sky & Peach.
+- [x] Verify palette switching, original-color restore, and layout.

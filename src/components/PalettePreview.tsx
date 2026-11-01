@@ -10,9 +10,9 @@ export function PalettePreview() {
   const copy = site.palettePreview;
 
   useEffect(() => {
-    if (selected) document.documentElement.dataset.palette = selected;
-    else delete document.documentElement.dataset.palette;
-    return () => { delete document.documentElement.dataset.palette; };
+    if (selected) document.documentElement.dataset['palette'] = selected;
+    else delete document.documentElement.dataset['palette'];
+    return () => { delete document.documentElement.dataset['palette']; };
   }, [selected]);
 
   return <aside className="palette-preview" aria-label={copy.title}>
