@@ -190,7 +190,7 @@ export const categories: Category[] = [
       {
         name: "Associated Student Body",
         role: "Director of Community Service & Cultural Awareness",
-        body: "As Community Service & Cultural Awareness Commissioner, I lead our school’s service drives and cultural events. I managed the Cultural Fair twice, one of the largest school events.",
+        body: "As Community Service & Cultural Awareness Commissioner, I lead our school’s service drives and cultural events for 600 students. I managed the Cultural Fair twice, the largest student led event.",
         points: [
           "600+ participants in Cultural Fair with 20+ booths, a $3k budget, and a team of 40",
           "$2,000+ raised for Thanksgiving meals",
@@ -205,7 +205,7 @@ export const categories: Category[] = [
         name: "Stanford Researcher with the Reischauer Scholars Program",
         role: "Stanford Program on International & Cross-Cultural Education",
         body: "I was selected as 1 of 30 scholars and researchers. I authored and presented research on the epistemology and politics of Japan’s Mingei Folk Arts, through weekly discussions with experts and advising from Naomi Funahashi.",
-        points: ["1 of 30 scholars selected", "Weekly discussions with experts", "Published research paper"],
+        points: ["1 of 30 scholars selected", "Published research paper"],
         link: { label: "Published research paper" },
       },
     ],
