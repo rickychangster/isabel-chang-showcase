@@ -36,17 +36,17 @@ export const categories: Category[] = [
 export const awards = [
  {year:'2026',items:[
  {title:'#1 Team · NDCA National Championship',detail:'Public Forum · Only the top 5% nationally qualify.',scope:'National'},
- {title:'Semifinalist · UNLV Debate Tournament',detail:'Top 4 of 140 teams.',scope:'National'},
- {title:'Quarterfinalist · Arizona State University Debate Tournament',detail:'Top 16 of 288 teams.',scope:'National'},
- {title:'#6 Speaker · UC Berkeley TOC Invitational',detail:'Out of 342 speakers.',scope:'National'},
+  {title:'Semifinalist · UNLV Debate Tournament',detail:'Top 4 of 140 teams.',scope:'International'},
+  {title:'Quarterfinalist · Arizona State University Debate Tournament',detail:'Top 16 of 288 teams.',scope:'International'},
+  {title:'#6 Speaker · UC Berkeley TOC Invitational',detail:'Out of 342 speakers.',scope:'International'},
  {title:'Rotary Service Above Self Scholarship',detail:'1 of 150 internationally, #1 regionally. $1,000 donated to Wise Online.',scope:'International'},
- {title:'Dragon Kim Foundation Finalist',detail:'Approximately top 50 across 3 states.',scope:'Regional'},
+ {title:'Dragon Kim Foundation Finalist',detail:'Approximately top 50 across 3 states.',scope:'National'},
  {title:'Changemakers Docathon Scholarship',detail:'International Schools Partnership.',scope:'International'},
  {title:'Philosophy Student of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'},
  {title:'AP Chinese Student of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'}]},
  {year:'2024',items:[
  {title:'Quarterfinalist & #5 Speaker · Taiwan Speech & Debate Invitational',detail:'Out of 72 teams. Tournament of Champions bid earned.',scope:'International'},
- {title:'Octofinalist · Yale Invitational Debate Tournament',detail:'Top 32 of 320 teams.',scope:'National'},
+ {title:'Octofinalist · Yale Invitational Debate Tournament',detail:'Top 32 of 320 teams.',scope:'International'},
  {title:'Badminton Doubles Player of the Year',detail:'Fairmont Preparatory Academy.',scope:'School'}]},
  {year:'2023',items:[{title:'Valedictorian Scholarship',detail:'Approximately $90,000+.',scope:'School'}]}
 ];
