@@ -5,3 +5,4 @@
 - [x] Reorganize "What I've Built" into Creator / Service / Passion categories.
 - [x] Add "What's Next" (Teleios) section between Built and Honors.
 - [ ] Replace Badminton Captain placeholder text with real copy (waiting on user).
+- [x] Crop badminton photo to 2:3 aspect ratio (crop from bottom).
