@@ -1,6 +1,7 @@
 // All public portfolio text, links and replaceable photograph slots live here.
 import unlvDebatePhoto from "@/assets/unlv-debate-semifinals.png.asset.json";
 import wiseOnlineClassPhoto from "@/assets/wise-online-class.png.asset.json";
+import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool.jpeg.asset.json";
 export type Photo = { caption: string; detail: string; src?: string; alt: string };
 export type Project = {
   id?: string;
@@ -222,7 +223,12 @@ export const categories: Category[] = [
         src: wiseOnlineClassPhoto.url,
         alt: "Students holding certificates from the weeklong Wise Online program Isabel led",
       },
-      photo("Learning to look a little closer", "Research & educational materials"),
+      {
+        caption: "free Wise Online workshop for local afterschool program",
+        detail: "Research & educational materials",
+        src: wiseOnlineAfterschoolPhoto.url,
+        alt: "Isabel teaching a free Wise Online workshop for a local afterschool program",
+      },
     ],
   },
   {
