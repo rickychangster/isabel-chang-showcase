@@ -46,7 +46,7 @@ export const site = {
         detail: "Directly taught through Wise Online, the digital literacy nonprofit I founded",
       },
       { number: "$14,300", unit: "raised", detail: "in cash donations, foods, books, and more supporting nonprofits" },
-      { number: "85k+", unit: "Monthly", detail: "Impressions on my Pinterest" },
+      { number: "90k+", unit: "Monthly", detail: "Impressions on my Pinterest" },
       { number: "300+", unit: "Visitors", detail: "Educated as a Junior Ambassador at the Bowers Museum" },
     ],
   },
