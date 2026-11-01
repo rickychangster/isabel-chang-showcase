@@ -1,4 +1,5 @@
 // All public portfolio text, links and replaceable photograph slots live here.
+import unlvDebatePhoto from "@/assets/unlv-debate-semifinals.png.asset.json";
 export type Photo = { caption: string; detail: string; src?: string; alt: string };
 export type Project = {
   id?: string;
@@ -33,7 +34,12 @@ export const site = {
     cta: "See what I’m planning next",
     photos: [
       photo("A little glimpse of my world", "A portrait of Isabel"),
-      photo("Questions. People. Possibilities.", "Debate, museum & everyday moments"),
+      {
+        caption: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
+        detail: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
+        src: unlvDebatePhoto.url,
+        alt: "Isabel at the UNLV Debate Tournament Semifinals (Top 4) round",
+      },
     ],
   },
   glance: {
