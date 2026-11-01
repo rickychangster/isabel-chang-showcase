@@ -221,7 +221,7 @@ export const categories: Category[] = [
             alt: "Students holding certificates from the weeklong Wise Online program Isabel led",
           },
           {
-            caption: "free Wise Online workshop for local afterschool program",
+            caption: "Free Wise Online workshop for local afterschool program",
             detail: "Research & educational materials",
             src: wiseOnlineAfterschoolPhoto.url,
             alt: "Isabel teaching a free Wise Online workshop for a local afterschool program",
