@@ -28,8 +28,8 @@ function Index(){
  return <>
  <section id="introduction" className="intro-section"><div className="container">
   <div className="intro-eyebrow"><span className="eyebrow">{site.hero.label}</span><span className="tiny-star" aria-hidden>✳</span></div>
-  <h1><span className="hero-greeting">{site.hero.greeting}</span>{site.hero.title}<br/><span className="hero-emphasis">{site.hero.emphasis}<svg viewBox="0 0 730 24" preserveAspectRatio="none" aria-hidden><path d="M4 16 Q365 -6 726 14 M30 21 Q390 8 697 20"/></svg></span></h1>
-  <div className="intro-bottom"><p className="hero-roles">{site.hero.roles.map((r,i)=><span key={r}>{i>0&&<span className="role-dot" aria-hidden>·</span>}{r}</span>)}</p><Button asChild className="portfolio-button"><a href="#built">{site.hero.cta}<ArrowDown size={18}/></a></Button></div>
+  <h1><span className="hero-greeting">{site.hero.greeting}</span>{site.hero.title}</h1>
+  <div className="intro-bottom"><p className="hero-roles">{site.hero.roles.map((r,i)=><span key={r}>{i>0&&<span className="role-dot" aria-hidden>·</span>}{r}</span>)}</p><Button asChild className="portfolio-button"><a href="#next">{site.hero.cta}<ArrowDown size={18}/></a></Button></div>
   <div className="hero-photo-row"><PhotoSpace photo={firstHero}/><PhotoSpace photo={secondHero}/><span className="photo-margin-note" aria-hidden><Sparkles size={26}/>{firstHero.caption}</span></div>
  </div></section>
  <section id="glance" className="glance-section"><div className="container"><div className="section-topline"><p className="eyebrow">{site.glance.label}</p></div><div className="stats-grid">{site.glance.stats.map((s,i)=><div key={s.number} className={`stat ${i===2?'stat-fundraising':''}`}><p className="stat-number">{s.number}</p><p className="stat-unit">{s.unit}</p><p className="stat-detail">{s.detail}</p></div>)}</div></div></section>
