@@ -199,6 +199,8 @@ export const site = {
       { id: "neon-mint", label: "Neon Mint" },
       { id: "vapor-chrome", label: "Vapor Chrome" },
       { id: "sky-peach", label: "Sky & Peach" },
+      { id: "cobalt-citrus", label: "Cobalt & Citrus" },
+      { id: "lagoon-poppy", label: "Lagoon & Poppy" },
     ],
   },
 };
