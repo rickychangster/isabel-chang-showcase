@@ -206,7 +206,6 @@ export const categories: Category[] = [
         role: "Stanford Program on International & Cross-Cultural Education",
         body: "I was selected as 1 of 30 scholars and researchers. I authored and presented research on the epistemology and politics of Japan’s Mingei Folk Arts, through weekly discussions with experts and advising from Naomi Funahashi.",
         points: ["1 of 30 scholars selected", "Published research paper"],
-        link: { label: "Published research paper" },
       },
     ],
     photos: [
