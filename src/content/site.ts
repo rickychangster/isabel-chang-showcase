@@ -62,7 +62,6 @@ export const site = {
       { number: "300+", unit: "Visitors", detail: "Educated as a Junior Ambassador at the Bowers Museum" },
     ],
   },
-  thread: { label: "My thread", title: "I follow what grabs me.", subtitle: "Here’s where it’s led." },
   built: { label: "Curiosity → action", title: "What I’ve Built" },
   next: {
     label: "Where this is all heading",
