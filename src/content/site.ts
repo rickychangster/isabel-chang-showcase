@@ -360,5 +360,14 @@ export const awards = [
       { title: "Badminton Doubles Player of the Year", detail: "Fairmont Preparatory Academy.", scope: "School" },
     ],
   },
-  { year: "2023", items: [{ title: "Valedictorian Scholarship", detail: "Approximately $90,000+.", scope: "School" }] },
+  {
+    year: "2023",
+    items: [
+      {
+        title: "$90,000+ Valedictorian Scholarship",
+        detail: "Given to the student with the highest cumulative GPA",
+        scope: "School",
+      },
+    ],
+  },
 ];
