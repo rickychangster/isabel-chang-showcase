@@ -2,6 +2,7 @@
 import unlvDebatePhoto from "@/assets/unlv-debate-semifinals.png.asset.json";
 import wiseOnlineClassPhoto from "@/assets/wise-online-class.png.asset.json";
 import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool.jpeg.asset.json";
+import badmintonPhoto from "@/assets/badminton-on-the-court.jpg.asset.json";
 export type Photo = { caption: string; detail: string; src?: string; alt: string };
 export type Project = {
   id?: string;
@@ -150,7 +151,12 @@ export const site = {
       {
         title: "A little friendly competition",
         text: "Varsity badminton captain. Team hype playlist curator.",
-        photo: photo("On the court", "Badminton & team moments"),
+        photo: {
+          caption: "On the court",
+          detail: "Badminton & team moments",
+          src: badmintonPhoto.url,
+          alt: "Isabel on the badminton court",
+        },
       },
       {
         title: "Art, made personal",
