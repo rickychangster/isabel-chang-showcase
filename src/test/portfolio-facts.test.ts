@@ -11,6 +11,6 @@ it('organizes What I’ve Built into the supplied categories with debate and hen
  expect(categories.find(c=>c.id==='service')?.projects.map(p=>p.name)).toContain('Henna Art');
  expect(categories.flatMap(c=>c.projects.map(p=>p.name))).not.toContain('Badminton Captain');
 });
-it('keeps the Teleios vision in What’s Next',()=>expect(site.next.name).toBe('Teleios'));
+it('keeps the Teleios vision in What’s Next',()=>expect(site.next.sections.at(-1)?.heading).toBe('Introducing Teleios'));
 it('preserves the supplied recognition years',()=>expect(awards.map(a=>a.year)).toEqual(['2026','2024','2023']));
 it('does not expose an invented email address',()=>expect(site.email).toBeUndefined());
