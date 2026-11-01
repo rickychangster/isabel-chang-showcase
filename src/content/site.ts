@@ -192,8 +192,8 @@ export const site = {
 };
 export const categories: Category[] = [
   {
-    id: "creator",
-    title: "Creator",
+    id: "creating",
+    title: "Creating",
     tone: "coral",
     projects: [
       {
