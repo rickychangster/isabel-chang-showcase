@@ -229,8 +229,8 @@ export const categories: Category[] = [
         ],
       },
       {
-        name: "Associated Student Body",
-        role: "Director of Community Service & Cultural Awareness",
+        name: "Director of Community Service & Cultural Awareness",
+        role: "Associated Student Body",
         body: "As Community Service & Cultural Awareness Commissioner, I lead our school’s service drives and cultural events for 600 students. I managed the Cultural Fair twice, the largest student led event.",
         points: [
           "600+ participants in Cultural Fair with 20+ booths, a $3k budget, and a team of 40",
