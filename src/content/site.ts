@@ -76,10 +76,10 @@ export const site = {
       {
         heading: "Introducing Teleios",
         paragraphs: [
-          "Through Teleios, I hope to combine my interests in philosophy, technology, and community-building to develop an AI-powered platform that helps students explore their values, discover meaningful opportunities, and turn their interests into tangible contributions.",
+          "Teleios combines my interests in philosophy, technology, and community-building to develop an AI-powered platform that helps students, and eventually people of all ages, explore their values, discover meaningful opportunities, and turn their interests into tangible contributions.",
           "The name comes from the Greek philosophical tradition. Telos refers to an end, aim, or purpose, while teleios evokes the idea of becoming complete or fully developed. Drawing on these ideas, I want Teleios to explore a question that has interested philosophers for centuries:",
           "What does it mean to live a meaningful life, and how do we discover our place in making the world better?",
-          "Teleios is my opportunity to help others discover the problems they want to solve.",
+          "My previous projects taught me how to recognize problems and build solutions; Teleios is my opportunity to help others discover the problems they want to solve.",
         ],
       },
     ],
