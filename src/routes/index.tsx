@@ -10,7 +10,6 @@ export const Route = createFileRoute('/')({
 function CategoryColumn({category,index}:{category:Category;index:number}){
  return <article className={`category-column tone-${category.tone}`}>
   <div className="category-heading"><span className="thread-number">0{index+1}</span><h3>{category.title}</h3><Asterisk className="thread-asterisk" size={30} strokeWidth={1.5}/></div>
-  <p className="category-intro">“{category.intro}”</p>
   <div className="category-projects">{category.projects.map(p=><ProjectDetail key={p.name} project={p}/>)}</div>
   <div className="category-photos">{category.photos.map(photo=><PhotoSpace key={photo.caption} photo={photo}/>)}</div>
  </article>;
@@ -19,7 +18,7 @@ function renderLinks(text:string){
  return text.split(/(\[[^\]]+\]\([^)]+\))/g).map((part,i)=>{const m=/^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);return m?<a key={i} href={m[2]} className="inline-link">{m[1]}</a>:part;});
 }
 function ProjectDetail({project,featured=false}:{project:Category['projects'][number];featured?:boolean}){
- return <article id={project.id} className={`project-detail ${featured?'featured-project':''}`}><h4>{project.name}</h4>{project.role&&<p className="project-role">{project.role}</p>}{project.body&&[project.body].flat().map(t=><p key={t}>{renderLinks(t)}</p>)}{project.points&&<ul>{project.points.map(p=><li key={p}>{p}</li>)}</ul>}{project.quote&&<blockquote>“{project.quote}”</blockquote>}{project.notes?.map(n=><p className="project-note" key={n}>{n}</p>)}{project.link&&(project.link.href?<Button asChild variant="link"><a href={project.link.href}>{project.link.label}<ArrowUpRight/></a></Button>:<p className="pending-link">{site.paperPending}<ArrowUpRight size={15}/></p>)}</article>;
+ return <article id={project.id} className={`project-detail ${featured?'featured-project':''}`}><h4>{project.name}</h4>{project.role&&<p className="project-role">{project.role}</p>}{project.body&&[project.body].flat().map(t=><p key={t}>{renderLinks(t)}</p>)}{project.points&&<ul>{project.points.map(p=><li key={p}>{p}</li>)}</ul>}{project.notes?.map(n=><p className="project-note" key={n}>{n}</p>)}{project.link&&(project.link.href?<Button asChild variant="link"><a href={project.link.href}>{project.link.label}<ArrowUpRight/></a></Button>:<p className="pending-link">{site.paperPending}<ArrowUpRight size={15}/></p>)}</article>;
 }
 function Index(){
  const firstHero = site.hero.photos[0];
