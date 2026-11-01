@@ -1,7 +1,7 @@
 // All public portfolio text, links and replaceable photograph slots live here.
 import unlvDebatePhoto from "@/assets/unlv-debate-semifinals.png.asset.json";
 import wiseOnlineClassPhoto from "@/assets/wise-online-class.png.asset.json";
-import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool.jpeg.asset.json";
+import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool-workshop.jpeg.asset.json";
 import badmintonPhoto from "@/assets/badminton-on-the-court.jpg.asset.json";
 import hennaPhoto from "@/assets/henna-creative-moments.jpg.asset.json";
 import hikingPhoto from "@/assets/hiking-in-maine.jpg.asset.json";
