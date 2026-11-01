@@ -215,7 +215,7 @@ export const categories: Category[] = [
   },
   {
     id: "service",
-    title: "Service",
+    title: "Communities I Served",
     tone: "teal",
     projects: [
       {
