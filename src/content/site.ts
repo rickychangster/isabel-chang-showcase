@@ -4,6 +4,7 @@ import wiseOnlineClassPhoto from "@/assets/wise-online-class.png.asset.json";
 import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool.jpeg.asset.json";
 import badmintonPhoto from "@/assets/badminton-on-the-court.jpg.asset.json";
 import hennaPhoto from "@/assets/henna-creative-moments.jpg.asset.json";
+import hikingPhoto from "@/assets/hiking-in-maine.jpg.asset.json";
 export type Photo = { caption: string; detail: string; src?: string; alt: string };
 export type Project = {
   id?: string;
@@ -145,9 +146,14 @@ export const site = {
     interestsTitle: "The things I come back to",
     interests: [
       {
-        title: "Movement",
-        text: "14 years of jazz, lyrical, K-pop, and ballet.",
-        photo: photo("In my element", "Dance & everyday moments"),
+        title: "Hiking and Nature",
+        text: "Lifelong adventurer",
+        photo: {
+          caption: "Enjoying the view",
+          detail: "Hiking & everyday moments",
+          src: hikingPhoto.url,
+          alt: "Isabel enjoying the view while hiking in Maine",
+        },
       },
       {
         title: "A little friendly competition",
