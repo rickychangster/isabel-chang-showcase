@@ -38,3 +38,4 @@ h2,.my-thread h2,.built-heading h2{font-size:var(--fs-h2)}
 .education-gpa{font-size:var(--fs-h4)!important}
 .inline-link{color:var(--coral);text-decoration:underline;text-underline-offset:3px}.inline-link:hover{color:var(--foreground)}
 .intro-section h1{color:var(--coral)}.hero-greeting{color:var(--foreground)}
+.next-heading{font-family:var(--font-display);font-weight:600;line-height:1.15;font-size:var(--fs-h3)}.next-block+.next-block{margin-top:40px}.next-block .next-heading+.next-body{margin-top:16px}
