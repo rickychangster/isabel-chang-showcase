@@ -3,6 +3,7 @@ import unlvDebatePhoto from "@/assets/unlv-debate-semifinals.png.asset.json";
 import wiseOnlineClassPhoto from "@/assets/wise-online-class.png.asset.json";
 import wiseOnlineAfterschoolPhoto from "@/assets/wise-online-afterschool.jpeg.asset.json";
 import badmintonPhoto from "@/assets/badminton-on-the-court.jpg.asset.json";
+import hennaPhoto from "@/assets/henna-creative-moments.jpg.asset.json";
 export type Photo = { caption: string; detail: string; src?: string; alt: string };
 export type Project = {
   id?: string;
@@ -161,7 +162,12 @@ export const site = {
       {
         title: "Art, made personal",
         text: "Phoenixes and turtles — my mom’s lucky charms — find their way into my henna.",
-        photo: photo("The details matter", "Henna & creative moments"),
+        photo: {
+          caption: "The details matter",
+          detail: "Henna & creative moments",
+          src: hennaPhoto.url,
+          alt: "Isabel's henna art",
+        },
       },
     ],
   },
