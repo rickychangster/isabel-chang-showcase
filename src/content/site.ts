@@ -189,20 +189,6 @@ export const site = {
   menuOpen: "Open navigation",
   menuClose: "Close navigation",
   backToTop: "Back to top",
-  palettePreview: {
-    title: "Compare palettes",
-    open: "Compare color palettes",
-    close: "Minimize palette preview",
-    original: "Original colors",
-    options: [
-      { id: "midnight-indigo", label: "Midnight Indigo" },
-      { id: "neon-mint", label: "Neon Mint" },
-      { id: "vapor-chrome", label: "Vapor Chrome" },
-      { id: "sky-peach", label: "Sky & Peach" },
-      { id: "cobalt-citrus", label: "Cobalt & Citrus" },
-      { id: "lagoon-poppy", label: "Lagoon & Poppy" },
-    ],
-  },
 };
 export const categories: Category[] = [
   {

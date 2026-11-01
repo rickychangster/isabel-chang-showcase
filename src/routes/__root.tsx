@@ -14,7 +14,6 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { Footer, Header } from "@/components/SiteLayout";
 import { site } from "@/content/site";
-import { PalettePreview } from "@/components/PalettePreview";
 
 function NotFoundComponent() {
   return (
@@ -126,7 +125,6 @@ function RootComponent() {
         <Outlet />
       </main>
       <Footer />
-      <PalettePreview />
     </QueryClientProvider>
   );
 }
