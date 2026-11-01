@@ -14,6 +14,7 @@ export type Project = {
   points?: string[];
   notes?: string[];
   link?: { label: string; href?: string };
+  photos?: Photo[];
 };
 export type Category = { id: string; title: string; tone: string; projects: Project[]; photos: Photo[] };
 const photo = (caption: string, detail: string): Photo => ({ caption, detail, alt: caption });
@@ -212,6 +213,20 @@ export const categories: Category[] = [
           "Rotary Service Above Self Scholarship: $1,000, #1 regionally, top 150 internationally; donated back to Wise Online.",
           "Dragon Kim Foundation Finalist.",
         ],
+        photos: [
+          {
+            caption: "Students holding certificates from the weeklong Wise Online program I led",
+            detail: "Wise Online workshops & student activities",
+            src: wiseOnlineClassPhoto.url,
+            alt: "Students holding certificates from the weeklong Wise Online program Isabel led",
+          },
+          {
+            caption: "free Wise Online workshop for local afterschool program",
+            detail: "Research & educational materials",
+            src: wiseOnlineAfterschoolPhoto.url,
+            alt: "Isabel teaching a free Wise Online workshop for a local afterschool program",
+          },
+        ],
       },
       {
         name: "Associated Student Body",
@@ -234,20 +249,7 @@ export const categories: Category[] = [
         points: ["1 of 30 scholars selected", "Published research paper"],
       },
     ],
-    photos: [
-      {
-        caption: "Students holding certificates from the weeklong Wise Online program I led",
-        detail: "Wise Online workshops & student activities",
-        src: wiseOnlineClassPhoto.url,
-        alt: "Students holding certificates from the weeklong Wise Online program Isabel led",
-      },
-      {
-        caption: "free Wise Online workshop for local afterschool program",
-        detail: "Research & educational materials",
-        src: wiseOnlineAfterschoolPhoto.url,
-        alt: "Isabel teaching a free Wise Online workshop for a local afterschool program",
-      },
-    ],
+    photos: [],
   },
   {
     id: "service",
