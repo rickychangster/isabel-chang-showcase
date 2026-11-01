@@ -17,7 +17,6 @@ export type Project = {
   photos?: Photo[];
 };
 export type Category = { id: string; title: string; tone: string; projects: Project[]; photos: Photo[] };
-const photo = (caption: string, detail: string): Photo => ({ caption, detail, alt: caption });
 export const site = {
   name: "Isabel Chang",
   domain: "https://isabelchang.com",
@@ -39,12 +38,17 @@ export const site = {
     roles: ["Debater", "Founder", "Researcher", "Artist", "Builder"],
     cta: "See what I’m planning next",
     photos: [
-      photo("A little glimpse of my world", "A portrait of Isabel"),
       {
-        caption: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
-        detail: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
-        src: unlvDebatePhoto.url,
-        alt: "Isabel at the UNLV Debate Tournament Semifinals (Top 4) round",
+        caption: "A little glimpse of my world",
+        detail: "A little glimpse of my world",
+        src: hikingPhoto.url,
+        alt: "Isabel enjoying the view while hiking in Maine",
+      },
+      {
+        caption: "Hosting workshop event on Quantum Computing during OC Tech Week as a partner with Quantum Tesseract",
+        detail: "Hosting workshop event on Quantum Computing during OC Tech Week",
+        src: "/images/quantum-tech-week-workshop.jpg",
+        alt: "Isabel hosting a Quantum Computing workshop during OC Tech Week with Quantum Tesseract",
       },
     ],
   },
@@ -57,9 +61,13 @@ export const site = {
         unit: "Students",
         detail: "Directly taught through Wise Online, the digital literacy nonprofit I founded",
       },
-      { number: "$14,300", unit: "raised", detail: "in cash donations, foods, books, and more supporting nonprofits" },
+      { number: "$14,300", unit: "raised", detail: "in cash donations, foods, books, and etc. supporting nonprofits" },
+      {
+        number: "450+",
+        unit: "Student debaters",
+        detail: "served through the debate tournament nonprofit I help lead",
+      },
       { number: "90k+", unit: "Monthly", detail: "Impressions on my Pinterest" },
-      { number: "300+", unit: "Visitors", detail: "Educated as a Junior Ambassador at the Bowers Museum" },
     ],
   },
   built: { label: "Curiosity → action", title: "What I’ve Built" },
@@ -101,7 +109,9 @@ export const site = {
     title: "Let’s Talk",
     body: "Whether it’s about debate, philosophy, a collaboration, or just something interesting, I’d love to hear from you.",
     reading: "Currently reading",
+    readingItems: ["Giovanni’s Room by James Baldwin", "Techno-Optimist Manifesto"],
     obsessed: "Currently obsessed with",
+    obsessedItems: ["Pinterest", "Github"],
     placeholder: "To be continued…",
     fields: { name: "Name", email: "Email", message: "Message" },
     submit: "Send it",
@@ -115,12 +125,15 @@ export const site = {
     label: "Beyond the bullet points",
     title: "A Little More About Me",
     paragraphs: [
-      "I’m Isabel Chang — a senior at Fairmont Preparatory Academy in Anaheim, CA, and a person who can’t leave an interesting question alone.",
-      "When I discovered debate in 9th grade, I didn’t just join the team — I became Head Captain, qualified for the Tournament of Champions three times, and helped my team win a national championship. When I noticed middle schoolers had no tools to spot misinformation, I didn’t write an essay about it — I co-founded Wise Online, a nonprofit that’s now partnered with the City of Irvine and taught 150+ students how to think critically about what they read.",
-      "When the Bowers Museum opened an exhibit on China’s Terracotta Warriors, I didn’t just visit — I trained as a Junior Ambassador and educated hundreds of visitors on artifacts I’d researched firsthand.",
-      "That’s the pattern. Something grabs me, and I grab back.",
-      "Outside of all that, I’m a 14-year dancer (jazz, lyrical, K-pop, ballet), a henna artist whose Pinterest pulls 60k impressions a month, a Varsity badminton captain who curates the team hype playlist, and someone who genuinely believes philosophy should be taught in middle school.",
+      "I’m Isabel Chang. Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder.",
+      "Outside of all that, I’m a hiker, henna artist, Varsity badminton captain, and dancer.",
     ],
+    portrait: {
+      caption: "Isabel Chang",
+      detail: "Portrait of Isabel",
+      src: "/images/isabel-portrait.jpg",
+      alt: "Portrait of Isabel Chang",
+    },
     educationTitle: "Education",
     school: "Fairmont Preparatory Academy",
     location: "Anaheim, CA",
@@ -140,7 +153,7 @@ export const site = {
     skillsTitle: "Skills & tools",
     skills: [
       { label: "Languages", text: "Mandarin Chinese (fluent), Java, C++, x86 Assembly" },
-      { label: "Software", text: "Adobe Premiere, Photoshop, 3D Modeling, Canva, Google Workspace" },
+      { label: "Software", text: "Adobe Premiere, Photoshop, Onshape 3D Modeling, Google Workspace" },
       { label: "Other", text: "CPR & First Aid Certified, 14 years of dance, Henna Artist" },
     ],
     interestsTitle: "The things I come back to",
@@ -167,7 +180,7 @@ export const site = {
       },
       {
         title: "Art, made personal",
-        text: "Phoenixes and turtles — my mom’s lucky charms — find their way into my henna.",
+        text: "Stars, phoenixes and turtles — my mom’s lucky charms — find their way into my henna.",
         photo: {
           caption: "The details matter",
           detail: "Henna & creative moments",
@@ -199,7 +212,7 @@ export const categories: Category[] = [
         name: "Founder of Wise Online",
         role: "Critical Thinking for the Digital Media Age",
         body: [
-          "I founded Wise Online to help middle schoolers be more prepared in the new AI and Digital Age. As new technologies change the digital landscape, policy and education is slow to follow, leaving students unprepared.",
+          "As new technologies change the landscape of digital content creation and distribution, young people as consumers of digital content are unprepared. Through the training of competitive debate, I have developed solutions for this challenge to prepare middle schoolers to be better critical thinkers in this new digital and AI age.",
           "This was the motivation for Wise Online. The same skills I learned being a [competitive debater](#debate), I applied to the curriculum that I wrote. Since founding, I have expanded:",
         ],
         points: [
@@ -209,7 +222,7 @@ export const categories: Category[] = [
           "Partnered with City of Irvine, 6 schools, and 5 organizations",
         ],
         notes: [
-          "Rotary Service Above Self Scholarship: $1,000, #1 regionally, top 150 internationally; donated back to Wise Online.",
+          "Rotary Service Above Self Scholarship: $1,000 donated to Wise Online. #1 regionally, top 150 internationally.",
           "Dragon Kim Foundation Finalist.",
         ],
         photos: [
@@ -240,11 +253,19 @@ export const categories: Category[] = [
           "430 pounds of food donated to Boys & Girls Club valued at $4,000",
         ],
         notes: ["Won Most Valuable Player (MVP) 3 Times"],
+        photos: [
+          {
+            caption: "Holiday Toy Drive I planned",
+            detail: "Holiday Toy Drive I planned",
+            src: "/images/holiday-toy-drive.jpg",
+            alt: "Isabel at the Holiday Toy Drive she planned at Fairmont Preparatory Academy",
+          },
+        ],
       },
       {
         name: "Stanford Researcher with the Reischauer Scholars Program",
         role: "Stanford Program on International & Cross-Cultural Education",
-        body: "I was selected as 1 of 30 scholars and researchers. I authored and presented research on the epistemology and politics of Japan’s Mingei Folk Arts, through weekly discussions with experts and advising from Naomi Funahashi.",
+        body: "I was selected as 1 of 30 scholars and researchers. I authored and presented research on the epistemology and politics of Japan’s Mingei Folk Arts, through weekly discussions with experts and advice from Naomi Funahashi.",
         points: ["1 of 30 scholars selected", "Published research paper"],
       },
     ],
@@ -258,7 +279,7 @@ export const categories: Category[] = [
       {
         name: "Board Director at Orange County Debate League",
         role: "Nonprofit Organization dedicated to affordable debate tournaments",
-        body: "As Board Director and Head Tabulation Administrator, I help run a nonprofit that provides affordable debate tournaments. I strengthened the league’s communication, liability, and equity policies.",
+        body: "As Board Director and Head Tabulation Administrator, I help run a nonprofit that provides affordable debate tournaments. I strengthened the league’s communication, liability, and equity policies. For example, we recently implemented a background check policy.",
         points: [
           "12 state and 4 national championships administered",
           "450+ debaters served",
@@ -295,20 +316,20 @@ export const categories: Category[] = [
           "39+ national and international tournaments",
         ],
       },
-      {
-        name: "Henna Art",
-        role: "Independent Study",
-        body: "Henna is my independent creative practice, with 100+ original designs for friends, family, and school events. My mom’s lucky charms, phoenixes and turtles, show up in a lot of my work.",
-        points: [
-          "60k+ Pinterest impressions a month",
-          "1.6k+ engagements a month",
-          "Featured artist at Culture Week and Diwali Festival (2×, 600+ attendees)",
-        ],
-      },
     ],
     photos: [
-      photo("Stories held in objects", "Bowers Museum exhibits & presentations"),
-      photo("Showing up for each other", "Community & service moments"),
+      {
+        caption: "Presenting the Terracotta Warriors Exhibit at the Bowers Museum",
+        detail: "Presenting the Terracotta Warriors Exhibit at the Bowers Museum",
+        src: "/images/terracotta-warriors-bowers.jpg",
+        alt: "Isabel presenting the Terracotta Warriors exhibit at the Bowers Museum",
+      },
+      {
+        caption: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
+        detail: "From the UNLV Debate Tournament Semifinals (Top 4) Round",
+        src: unlvDebatePhoto.url,
+        alt: "Isabel at the UNLV Debate Tournament Semifinals (Top 4) round",
+      },
     ],
   },
 ];
@@ -339,8 +360,7 @@ export const awards = [
         detail: "International Schools Partnership.",
         scope: "International",
       },
-      { title: "Philosophy Student of the Year", detail: "Fairmont Preparatory Academy.", scope: "School" },
-      { title: "AP Chinese Student of the Year", detail: "Fairmont Preparatory Academy.", scope: "School" },
+      { title: "AP Scholar with Distinction.", detail: "Collegeboard", scope: "National" },
     ],
   },
   {
